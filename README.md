@@ -52,7 +52,7 @@ Scripts are numbered to reflect their execution order. All scripts are located i
 
 | Script | Description |
 |---|---|
-| `2_PREPROCESS_01_Partitioning.py` | Generates participant-level stratified 7:1:2 TRAIN/VAL/TEST splits using seed search to minimize prevalence drift. |
+| `2_PREPROCESS_01_Partitioning.py` | Generates participant-level stratified training-validation-test splits using seed search to minimize prevalence drift. |
 | `2_PREPROCESS_02_MetaData.py` | Generates a metadata summary file for the analytic sample. |
 
 ### Stage 3: Model Development ###
@@ -85,7 +85,7 @@ Scripts are numbered to reflect their execution order. All scripts are located i
 
 | Script | Description |
 |---|---|
-| `5_DIAGNOSIS_01_ICC_Outcome.py` | Computes outcome-level intraclass correlation coefficients (ICC) via linear mixed models and Bayesian logistic GLMM. |
+| `5_DIAGNOSIS_01_ICC_Outcome.py` | Computes outcome-level intraclass correlation coefficients (ICC) via Bayesian logistic GLMM. |
 | `5_DIAGNOSIS_02_ICC_Sensor_Features.py` | Computes per-feature ICC for sensor features via linear random-intercept models. |
 
 ### Stage 6: Data Dictionary ###
