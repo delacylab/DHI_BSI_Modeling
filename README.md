@@ -1,11 +1,17 @@
 <div align="right">
-  Last update: 2026 November 3 (by Wayne Lam)
+  Last update: 2026 November 3, 11:08 MT (by Wayne Lam)
 </div>
 <hr>
 
 # Classical machine learning versus transformers for predicting daily psychological distress from passive smartphone sensing and self-report: a prospective cohort study
 
 [![license_badge](https://img.shields.io/badge/License-Apache_2.0-8A2BE2)](https://www.apache.org/licenses/LICENSE-2.0)
+
+<div align="center">
+  <img width="1024" height="338" alt="Gemini_Generated_Image_31xmyq31xmyq31xm" src="https://github.com/user-attachments/assets/41bff789-da31-4a25-afda-414f61dff6cd" />
+</div>
+
+
 
 # :crystal_ball: Abstract #
 
