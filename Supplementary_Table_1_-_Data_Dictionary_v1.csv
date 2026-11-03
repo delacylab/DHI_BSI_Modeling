@@ -1,0 +1,565 @@
+Feature_Name,Category,Type,Ordinal_Range,Description
+ACC#availability,Sensor (15-minute-level aggregate),Binary,,Whether valid accelerometer data are present in the 15-minute epoch
+ACC#cadence_spm^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Steps per minute estimated from accelerometer peak frequency (15-minute-level resolution)
+ACC#energy_vm^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Sum of squared vector magnitudes (15-minute-level resolution)
+ACC#entropy_vm^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Shannon entropy of vector magnitude (15-minute-level resolution)
+ACC#iqr_vm^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Interquartile range of vector magnitude (15-minute-level resolution)
+ACC#longest_gap_s^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Longest gap (in seconds) between consecutive samples within a burst (15-minute-level resolution)
+ACC#max_vm^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Maximum vector magnitude (15-minute-level resolution)
+ACC#mean_vm^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Mean vector magnitude (15-minute-level resolution)
+ACC#mean_x^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the x-axis (15-minute-level resolution)
+ACC#mean_y^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the y-axis (15-minute-level resolution)
+ACC#mean_z^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the z-axis (15-minute-level resolution)
+ACC#median_vm^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Median vector magnitude (15-minute-level resolution)
+ACC#n_min^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Minutes of valid data recorded for the stream (15-minute-level resolution)
+ACC#n_samples^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Total number of accelerometer samples in the time window (15-minute-level resolution)
+ACC#std_vm^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of vector magnitude (15-minute-level resolution)
+ACC#std_x^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the x-axis (15-minute-level resolution)
+ACC#std_y^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the y-axis (15-minute-level resolution)
+ACC#std_z^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the z-axis (15-minute-level resolution)
+ACC#steps^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Total number of steps taken (15-minute-level resolution)
+ACC#walking_time_s^15min,Sensor (15-minute-level aggregate),Continuous,,[ACCELEROMETER] Total seconds of detected walking activity (15-minute-level resolution)
+GPS#availability,Sensor (15-minute-level aggregate),Binary,,Whether valid GPS data are present in the 15-minute epoch
+GPS#centroid_distance_max_m^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Maximum distance of pings from the centroid (in meters) (15-minute-level resolution)
+GPS#centroid_distance_mean_m^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Mean distance of pings from the centroid (in meters) (15-minute-level resolution)
+GPS#duration_sec^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Time span (in seconds) from first to last ping (15-minute-level resolution)
+GPS#home_fraction^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Fraction of GPS samples within the home geofence (15-minute-level resolution)
+GPS#max_dist_home_m^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Maximum distance from home address in meters (15-minute-level resolution)
+GPS#max_speed_mps^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Maximum speed across consecutive pings (meters per second) (15-minute-level resolution)
+GPS#max_step_distance_m^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Largest single step between consecutive pings (in meters) (15-minute-level resolution)
+GPS#mean_dist_home_m^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Mean distance from home address in meters (15-minute-level resolution)
+GPS#mean_speed_mps^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Mean speed across consecutive pings (meters per second) (15-minute-level resolution)
+GPS#n_min^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Minutes of valid data recorded for the stream (15-minute-level resolution)
+GPS#n_points^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Number of GPS pings recorded (15-minute-level resolution)
+GPS#total_path_length_m^15min,Sensor (15-minute-level aggregate),Continuous,,[GPS] Total distance travelled (in meters) (15-minute-level resolution)
+PS#availability,Sensor (15-minute-level aggregate),Binary,,Whether valid power state data are present in the 15-minute epoch
+PS#battery_level_mean^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Mean battery level across raw events (15-minute-level resolution)
+PS#lock_count^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Number of screen lock events (15-minute-level resolution)
+PS#n_events^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Total number of raw power state events (15-minute-level resolution)
+PS#n_min^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Minutes of valid data recorded for the stream (15-minute-level resolution)
+PS#plug_event_count^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Number of plug-in events (15-minute-level resolution)
+PS#plugged_fraction^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Fraction of time the device was plugged in (15-minute-level resolution)
+PS#screen_on_fraction^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Fraction of time the screen was on (15-minute-level resolution)
+PS#state_changes_count^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Total number of screen or charging state transitions (15-minute-level resolution)
+PS#unlock_count^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Number of screen unlock events (15-minute-level resolution)
+PS#unplug_event_count^15min,Sensor (15-minute-level aggregate),Continuous,,[POWER STATE] Number of unplug events (15-minute-level resolution)
+ACC#cadence_spm^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Steps per minute estimated from accelerometer peak frequency (hour-level resolution)
+ACC#energy_vm^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Sum of squared vector magnitudes (hour-level resolution)
+ACC#entropy_vm^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Shannon entropy of vector magnitude (hour-level resolution)
+ACC#iqr_vm^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Interquartile range of vector magnitude (hour-level resolution)
+ACC#longest_gap_s^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Longest gap (in seconds) between consecutive samples within a burst (hour-level resolution)
+ACC#max_vm^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Maximum vector magnitude (hour-level resolution)
+ACC#mean_vm^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Mean vector magnitude (hour-level resolution)
+ACC#mean_x^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the x-axis (hour-level resolution)
+ACC#mean_y^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the y-axis (hour-level resolution)
+ACC#mean_z^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the z-axis (hour-level resolution)
+ACC#median_vm^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Median vector magnitude (hour-level resolution)
+ACC#n_min^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Minutes of valid data recorded for the stream (hour-level resolution)
+ACC#n_samples^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Total number of accelerometer samples in the time window (hour-level resolution)
+ACC#std_vm^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of vector magnitude (hour-level resolution)
+ACC#std_x^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the x-axis (hour-level resolution)
+ACC#std_y^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the y-axis (hour-level resolution)
+ACC#std_z^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the z-axis (hour-level resolution)
+ACC#steps^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Total number of steps taken (hour-level resolution)
+ACC#walking_time_s^1h,Sensor (hour-level aggregate),Continuous,,[ACCELEROMETER] Total seconds of detected walking activity (hour-level resolution)
+GPS#centroid_distance_max_m^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Maximum distance of pings from the centroid (in meters) (hour-level resolution)
+GPS#centroid_distance_mean_m^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Mean distance of pings from the centroid (in meters) (hour-level resolution)
+GPS#duration_sec^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Time span (in seconds) from first to last ping (hour-level resolution)
+GPS#home_fraction^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Fraction of GPS samples within the home geofence (hour-level resolution)
+GPS#max_dist_home_m^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Maximum distance from home address in meters (hour-level resolution)
+GPS#max_speed_mps^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Maximum speed across consecutive pings (meters per second) (hour-level resolution)
+GPS#max_step_distance_m^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Largest single step between consecutive pings (in meters) (hour-level resolution)
+GPS#mean_dist_home_m^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Mean distance from home address in meters (hour-level resolution)
+GPS#mean_speed_mps^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Mean speed across consecutive pings (meters per second) (hour-level resolution)
+GPS#n_min^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Minutes of valid data recorded for the stream (hour-level resolution)
+GPS#n_points^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Number of GPS pings recorded (hour-level resolution)
+GPS#total_path_length_m^1h,Sensor (hour-level aggregate),Continuous,,[GPS] Total distance travelled (in meters) (hour-level resolution)
+PS#battery_level_mean^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Mean battery level across raw events (hour-level resolution)
+PS#lock_count^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Number of screen lock events (hour-level resolution)
+PS#n_events^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Total number of raw power state events (hour-level resolution)
+PS#n_min^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Minutes of valid data recorded for the stream (hour-level resolution)
+PS#plug_event_count^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Number of plug-in events (hour-level resolution)
+PS#plugged_fraction^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Fraction of time the device was plugged in (hour-level resolution)
+PS#screen_on_fraction^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Fraction of time the screen was on (hour-level resolution)
+PS#state_changes_count^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Total number of screen or charging state transitions (hour-level resolution)
+PS#unlock_count^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Number of screen unlock events (hour-level resolution)
+PS#unplug_event_count^1h,Sensor (hour-level aggregate),Continuous,,[POWER STATE] Number of unplug events (hour-level resolution)
+ACC#cadence_spm^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Steps per minute estimated from accelerometer peak frequency (6-hour-level resolution)
+ACC#energy_vm^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Sum of squared vector magnitudes (6-hour-level resolution)
+ACC#entropy_vm^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Shannon entropy of vector magnitude (6-hour-level resolution)
+ACC#iqr_vm^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Interquartile range of vector magnitude (6-hour-level resolution)
+ACC#longest_gap_s^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Longest gap (in seconds) between consecutive samples within a burst (6-hour-level resolution)
+ACC#max_vm^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Maximum vector magnitude (6-hour-level resolution)
+ACC#mean_vm^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Mean vector magnitude (6-hour-level resolution)
+ACC#mean_x^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the x-axis (6-hour-level resolution)
+ACC#mean_y^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the y-axis (6-hour-level resolution)
+ACC#mean_z^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the z-axis (6-hour-level resolution)
+ACC#median_vm^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Median vector magnitude (6-hour-level resolution)
+ACC#n_min^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Minutes of valid data recorded for the stream (6-hour-level resolution)
+ACC#n_samples^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Total number of accelerometer samples in the time window (6-hour-level resolution)
+ACC#std_vm^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of vector magnitude (6-hour-level resolution)
+ACC#std_x^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the x-axis (6-hour-level resolution)
+ACC#std_y^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the y-axis (6-hour-level resolution)
+ACC#std_z^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the z-axis (6-hour-level resolution)
+ACC#steps^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Total number of steps taken (6-hour-level resolution)
+ACC#walking_time_s^6h,Sensor (6-hour-level aggregate),Continuous,,[ACCELEROMETER] Total seconds of detected walking activity (6-hour-level resolution)
+GPS#centroid_distance_max_m^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Maximum distance of pings from the centroid (in meters) (6-hour-level resolution)
+GPS#centroid_distance_mean_m^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Mean distance of pings from the centroid (in meters) (6-hour-level resolution)
+GPS#duration_sec^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Time span (in seconds) from first to last ping (6-hour-level resolution)
+GPS#home_fraction^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Fraction of GPS samples within the home geofence (6-hour-level resolution)
+GPS#max_dist_home_m^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Maximum distance from home address in meters (6-hour-level resolution)
+GPS#max_speed_mps^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Maximum speed across consecutive pings (meters per second) (6-hour-level resolution)
+GPS#max_step_distance_m^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Largest single step between consecutive pings (in meters) (6-hour-level resolution)
+GPS#mean_dist_home_m^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Mean distance from home address in meters (6-hour-level resolution)
+GPS#mean_speed_mps^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Mean speed across consecutive pings (meters per second) (6-hour-level resolution)
+GPS#n_min^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Minutes of valid data recorded for the stream (6-hour-level resolution)
+GPS#n_points^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Number of GPS pings recorded (6-hour-level resolution)
+GPS#total_path_length_m^6h,Sensor (6-hour-level aggregate),Continuous,,[GPS] Total distance travelled (in meters) (6-hour-level resolution)
+PS#battery_level_mean^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Mean battery level across raw events (6-hour-level resolution)
+PS#lock_count^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Number of screen lock events (6-hour-level resolution)
+PS#n_events^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Total number of raw power state events (6-hour-level resolution)
+PS#n_min^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Minutes of valid data recorded for the stream (6-hour-level resolution)
+PS#plug_event_count^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Number of plug-in events (6-hour-level resolution)
+PS#plugged_fraction^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Fraction of time the device was plugged in (6-hour-level resolution)
+PS#screen_on_fraction^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Fraction of time the screen was on (6-hour-level resolution)
+PS#state_changes_count^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Total number of screen or charging state transitions (6-hour-level resolution)
+PS#unlock_count^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Number of screen unlock events (6-hour-level resolution)
+PS#unplug_event_count^6h,Sensor (6-hour-level aggregate),Continuous,,[POWER STATE] Number of unplug events (6-hour-level resolution)
+ACC#cadence_spm^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Steps per minute estimated from accelerometer peak frequency (day-level resolution)
+ACC#energy_vm^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Sum of squared vector magnitudes (day-level resolution)
+ACC#entropy_vm^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Shannon entropy of vector magnitude (day-level resolution)
+ACC#iqr_vm^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Interquartile range of vector magnitude (day-level resolution)
+ACC#longest_gap_s^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Longest gap (in seconds) between consecutive samples within a burst (day-level resolution)
+ACC#max_vm^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Maximum vector magnitude (day-level resolution)
+ACC#mean_vm^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Mean vector magnitude (day-level resolution)
+ACC#mean_x^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the x-axis (day-level resolution)
+ACC#mean_y^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the y-axis (day-level resolution)
+ACC#mean_z^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Mean acceleration along the z-axis (day-level resolution)
+ACC#median_vm^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Median vector magnitude (day-level resolution)
+ACC#n_min^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Minutes of valid data recorded for the stream (day-level resolution)
+ACC#n_samples^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Total number of accelerometer samples in the time window (day-level resolution)
+ACC#std_vm^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of vector magnitude (day-level resolution)
+ACC#std_x^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the x-axis (day-level resolution)
+ACC#std_y^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the y-axis (day-level resolution)
+ACC#std_z^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Standard deviation of acceleration along the z-axis (day-level resolution)
+ACC#steps^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Total number of steps taken (day-level resolution)
+ACC#walking_time_s^24h,Sensor (day-level aggregate),Continuous,,[ACCELEROMETER] Total seconds of detected walking activity (day-level resolution)
+GPS#centroid_distance_max_m^24h,Sensor (day-level aggregate),Continuous,,[GPS] Maximum distance of pings from the centroid (in meters) (day-level resolution)
+GPS#centroid_distance_mean_m^24h,Sensor (day-level aggregate),Continuous,,[GPS] Mean distance of pings from the centroid (in meters) (day-level resolution)
+GPS#duration_sec^24h,Sensor (day-level aggregate),Continuous,,[GPS] Time span (in seconds) from first to last ping (day-level resolution)
+GPS#home_fraction^24h,Sensor (day-level aggregate),Continuous,,[GPS] Fraction of GPS samples within the home geofence (day-level resolution)
+GPS#max_dist_home_m^24h,Sensor (day-level aggregate),Continuous,,[GPS] Maximum distance from home address in meters (day-level resolution)
+GPS#max_speed_mps^24h,Sensor (day-level aggregate),Continuous,,[GPS] Maximum speed across consecutive pings (meters per second) (day-level resolution)
+GPS#max_step_distance_m^24h,Sensor (day-level aggregate),Continuous,,[GPS] Largest single step between consecutive pings (in meters) (day-level resolution)
+GPS#mean_dist_home_m^24h,Sensor (day-level aggregate),Continuous,,[GPS] Mean distance from home address in meters (day-level resolution)
+GPS#mean_speed_mps^24h,Sensor (day-level aggregate),Continuous,,[GPS] Mean speed across consecutive pings (meters per second) (day-level resolution)
+GPS#n_min^24h,Sensor (day-level aggregate),Continuous,,[GPS] Minutes of valid data recorded for the stream (day-level resolution)
+GPS#n_points^24h,Sensor (day-level aggregate),Continuous,,[GPS] Number of GPS pings recorded (day-level resolution)
+GPS#total_path_length_m^24h,Sensor (day-level aggregate),Continuous,,[GPS] Total distance travelled (in meters) (day-level resolution)
+PS#battery_level_mean^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Mean battery level across raw events (day-level resolution)
+PS#lock_count^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Number of screen lock events (day-level resolution)
+PS#n_events^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Total number of raw power state events (day-level resolution)
+PS#n_min^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Minutes of valid data recorded for the stream (day-level resolution)
+PS#plug_event_count^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Number of plug-in events (day-level resolution)
+PS#plugged_fraction^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Fraction of time the device was plugged in (day-level resolution)
+PS#screen_on_fraction^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Fraction of time the screen was on (day-level resolution)
+PS#state_changes_count^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Total number of screen or charging state transitions (day-level resolution)
+PS#unlock_count^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Number of screen unlock events (day-level resolution)
+PS#unplug_event_count^24h,Sensor (day-level aggregate),Continuous,,[POWER STATE] Number of unplug events (day-level resolution)
+coverage_frac@daily,Sensor (day-level aggregate),Continuous,,Fraction of the day's 96 possible 15-minute epochs that contain at least one valid sensor observation
+ACC#cadence_spm^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#cadence_spm^15min
+ACC#cadence_spm^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#cadence_spm^1h
+ACC#cadence_spm^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#cadence_spm^6h
+ACC#energy_vm^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#energy_vm^15min
+ACC#energy_vm^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#energy_vm^1h
+ACC#energy_vm^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#energy_vm^6h
+ACC#entropy_vm^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#entropy_vm^15min
+ACC#entropy_vm^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#entropy_vm^1h
+ACC#entropy_vm^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#entropy_vm^6h
+ACC#iqr_vm^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#iqr_vm^15min
+ACC#iqr_vm^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#iqr_vm^1h
+ACC#iqr_vm^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#iqr_vm^6h
+ACC#longest_gap_s^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#longest_gap_s^15min
+ACC#longest_gap_s^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#longest_gap_s^1h
+ACC#longest_gap_s^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#longest_gap_s^6h
+ACC#max_vm^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#max_vm^15min
+ACC#max_vm^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#max_vm^1h
+ACC#max_vm^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#max_vm^6h
+ACC#mean_vm^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_vm^15min
+ACC#mean_vm^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_vm^1h
+ACC#mean_vm^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_vm^6h
+ACC#mean_x^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_x^15min
+ACC#mean_x^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_x^1h
+ACC#mean_x^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_x^6h
+ACC#mean_y^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_y^15min
+ACC#mean_y^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_y^1h
+ACC#mean_y^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_y^6h
+ACC#mean_z^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_z^15min
+ACC#mean_z^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_z^1h
+ACC#mean_z^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#mean_z^6h
+ACC#median_vm^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#median_vm^15min
+ACC#median_vm^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#median_vm^1h
+ACC#median_vm^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#median_vm^6h
+ACC#n_min^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#n_min^15min
+ACC#n_min^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#n_min^1h
+ACC#n_min^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#n_min^6h
+ACC#n_samples^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#n_samples^15min
+ACC#n_samples^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#n_samples^1h
+ACC#n_samples^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#n_samples^6h
+ACC#std_vm^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_vm^15min
+ACC#std_vm^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_vm^1h
+ACC#std_vm^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_vm^6h
+ACC#std_x^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_x^15min
+ACC#std_x^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_x^1h
+ACC#std_x^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_x^6h
+ACC#std_y^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_y^15min
+ACC#std_y^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_y^1h
+ACC#std_y^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_y^6h
+ACC#std_z^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_z^15min
+ACC#std_z^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_z^1h
+ACC#std_z^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#std_z^6h
+ACC#steps^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#steps^15min
+ACC#steps^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#steps^1h
+ACC#steps^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#steps^6h
+ACC#walking_time_s^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#walking_time_s^15min
+ACC#walking_time_s^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#walking_time_s^1h
+ACC#walking_time_s^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature ACC#walking_time_s^6h
+GPS#centroid_distance_max_m^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#centroid_distance_max_m^15min
+GPS#centroid_distance_max_m^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#centroid_distance_max_m^1h
+GPS#centroid_distance_max_m^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#centroid_distance_max_m^6h
+GPS#centroid_distance_mean_m^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#centroid_distance_mean_m^15min
+GPS#centroid_distance_mean_m^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#centroid_distance_mean_m^1h
+GPS#centroid_distance_mean_m^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#centroid_distance_mean_m^6h
+GPS#duration_sec^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#duration_sec^15min
+GPS#duration_sec^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#duration_sec^1h
+GPS#duration_sec^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#duration_sec^6h
+GPS#home_fraction^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#home_fraction^15min
+GPS#home_fraction^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#home_fraction^1h
+GPS#home_fraction^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#home_fraction^6h
+GPS#max_dist_home_m^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#max_dist_home_m^15min
+GPS#max_dist_home_m^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#max_dist_home_m^1h
+GPS#max_dist_home_m^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#max_dist_home_m^6h
+GPS#max_speed_mps^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#max_speed_mps^15min
+GPS#max_speed_mps^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#max_speed_mps^1h
+GPS#max_speed_mps^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#max_speed_mps^6h
+GPS#max_step_distance_m^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#max_step_distance_m^15min
+GPS#max_step_distance_m^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#max_step_distance_m^1h
+GPS#max_step_distance_m^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#max_step_distance_m^6h
+GPS#mean_dist_home_m^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#mean_dist_home_m^15min
+GPS#mean_dist_home_m^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#mean_dist_home_m^1h
+GPS#mean_dist_home_m^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#mean_dist_home_m^6h
+GPS#mean_speed_mps^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#mean_speed_mps^15min
+GPS#mean_speed_mps^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#mean_speed_mps^1h
+GPS#mean_speed_mps^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#mean_speed_mps^6h
+GPS#n_min^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#n_min^15min
+GPS#n_min^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#n_min^1h
+GPS#n_min^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#n_min^6h
+GPS#n_points^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#n_points^15min
+GPS#n_points^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#n_points^1h
+GPS#n_points^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#n_points^6h
+GPS#total_path_length_m^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#total_path_length_m^15min
+GPS#total_path_length_m^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#total_path_length_m^1h
+GPS#total_path_length_m^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature GPS#total_path_length_m^6h
+PS#battery_level_mean^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#battery_level_mean^15min
+PS#battery_level_mean^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#battery_level_mean^1h
+PS#battery_level_mean^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#battery_level_mean^6h
+PS#lock_count^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#lock_count^15min
+PS#lock_count^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#lock_count^1h
+PS#lock_count^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#lock_count^6h
+PS#n_events^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#n_events^15min
+PS#n_events^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#n_events^1h
+PS#n_events^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#n_events^6h
+PS#n_min^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#n_min^15min
+PS#n_min^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#n_min^1h
+PS#n_min^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#n_min^6h
+PS#plug_event_count^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#plug_event_count^15min
+PS#plug_event_count^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#plug_event_count^1h
+PS#plug_event_count^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#plug_event_count^6h
+PS#plugged_fraction^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#plugged_fraction^15min
+PS#plugged_fraction^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#plugged_fraction^1h
+PS#plugged_fraction^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#plugged_fraction^6h
+PS#screen_on_fraction^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#screen_on_fraction^15min
+PS#screen_on_fraction^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#screen_on_fraction^1h
+PS#screen_on_fraction^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#screen_on_fraction^6h
+PS#state_changes_count^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#state_changes_count^15min
+PS#state_changes_count^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#state_changes_count^1h
+PS#state_changes_count^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#state_changes_count^6h
+PS#unlock_count^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#unlock_count^15min
+PS#unlock_count^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#unlock_count^1h
+PS#unlock_count^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#unlock_count^6h
+PS#unplug_event_count^15min@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#unplug_event_count^15min
+PS#unplug_event_count^1h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#unplug_event_count^1h
+PS#unplug_event_count^6h@roc,Sensor (Derived rate of change),Continuous,,Rate of change computed from the sensor feature PS#unplug_event_count^6h
+active_bout_count@daily,Static (cumulative daily features),Continuous,,Number of sustained active bouts
+active_min_per_obs_hr@daily,Static (cumulative daily features),Continuous,,"Active minutes per observed hour (cadence >= 20 spm), normalized by actual coverage"
+longest_active_bout_min@daily,Static (cumulative daily features),Continuous,,Duration of the longest sustained active bout (in minutes)
+longest_sleep_min@daily,Static (cumulative daily features),Continuous,,Duration of the longest detected sleep period in the 24-hour window (in minutes)
+most_recent_sleep_min@daily,Static (cumulative daily features),Continuous,,Duration of the most recent sleep period in the 24-hour window (in minutes)
+n_sleep_periods@daily,Static (cumulative daily features),Continuous,,Number of distinct sleep periods detected in the 24-hour window
+peak_cadence_avg@daily,Static (cumulative daily features),Continuous,,Mean cadence of the top 30 highest-cadence minutes
+sleep_detected@daily,Static (cumulative daily features),Binary,,Availability of sleep period detected in the 24-hour window
+steps_per_obs_hr@daily,Static (cumulative daily features),Continuous,,"Total steps per observed hour, normalized by actual coverage"
+TOD_cos@clock,Static (time context),Continuous,,Time of day encoded as cosine component of sinusoidal encoding
+TOD_sin@clock,Static (time context),Continuous,,Time of day encoded as cosine component of sinusoidal encoding
+Weekend@clock,Static (time context),Binary,,Binary indicator of weekend
+with_home_address,Static (administrative),Binary,,Availability of home coordinates provided for the participant
+Age@survey,Static (baseline survey),Continuous,,Age
+DASS21_10@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 10) I felt that I had nothing to look forward to.
+DASS21_11@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 11) I found myself getting agitated.
+DASS21_12@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 12) I found it difficult to relax.
+DASS21_13@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 13) I felt down-hearted and blue.
+DASS21_14@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 14) I was intolerant of anything that kept me from getting on with what I was doing.
+DASS21_15@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 15) I felt I was close to panic.
+DASS21_16@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 16) I was unable to become enthusiastic about anything.
+DASS21_17@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 17) I felt I wasn't worth much as a person.
+DASS21_18@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 18) I felt that I was rather touchy.
+DASS21_19@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}","Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 19) I was aware of the action of my heart in the absence of physical exertion (e.g., sense of heart rate increase, heart missing a beat)."
+DASS21_1@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 1) I found it hard to wind down.
+DASS21_20@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 20) I felt scared without any good reason.
+DASS21_21@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 21) I felt that life was meaningless.
+DASS21_2@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 2) I was aware of dryness of mouth.
+DASS21_3@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 3) I couldn't seem to experience any positive feeling at all.
+DASS21_4@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}","Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 4) I experienced breathing difficulty (e.g., excessively rapid breathing, breathlessness in the absence of physical exertion)."
+DASS21_5@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 5) I found it difficult to work up the initiative to do things.
+DASS21_6@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 6) I tended to over-react to situations.
+DASS21_7@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}","Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 7) I experienced trembling (e.g., in the hands)."
+DASS21_8@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 8) I felt that I was using a lot of nervous energy.
+DASS21_9@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",Please read each statement and select the answer that indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. - 9) I was worried about situations in which I might panic and make a fool of myself.
+DASS21_Anx@survey,Static (baseline survey),Continuous,,"Sub-scale score of anxiety from Depression, Anxiety, and Stress Scale-21 (DASS-21)"
+DASS21_Dep@survey,Static (baseline survey),Continuous,,"Sub-scale score of depression from Depression, Anxiety, and Stress Scale-21 (DASS-21)"
+DASS21_Stress@survey,Static (baseline survey),Continuous,,"Sub-scale score of stress from Depression, Anxiety, and Stress Scale-21 (DASS-21)"
+DASS21_Total@survey,Static (baseline survey),Continuous,,"Total score from Depression, Anxiety, and Stress Scale-21 (DASS-21)"
+DERS_10@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 10. When I'm upset, I acknowledge my emotions"
+DERS_11@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 11. When I'm upset, I become angry with myself for feeling that way"
+DERS_12@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 12. When I'm upset, I become embarrassed for feeling that way"
+DERS_13@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 13. When I'm upset, I have difficulty getting work done"
+DERS_14@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 14. When I'm upset, I become out of control"
+DERS_15@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 15. When I'm upset, I believe that I will remain that way for a long time"
+DERS_16@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 16. When I'm upset, I believe that I'll end up feeling very depressed"
+DERS_17@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 17. When I'm upset, I believe my feelings are valid and important"
+DERS_18@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 18. When I'm upset, I have difficulty focusing on other things"
+DERS_19@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 19. When I'm upset, I feel out of control"
+DERS_1@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}",Please indicate how often the following 36 statements apply to you. - 1. I am clear about my feelings
+DERS_20@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 20. When I'm upset, I can still get things done"
+DERS_21@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 21. When I'm upset, I feel ashamed with myself for feeling that way"
+DERS_22@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 22. When I'm upset, I know that I can find a way to eventually feel better"
+DERS_23@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 23. When I'm upset, I feel like I am weak"
+DERS_24@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 24. When I'm upset, I feel like I can remain in control of my behaviors"
+DERS_25@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 25. When I'm upset, I feel guilty for feeling that way"
+DERS_26@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 26. When I'm upset, I have difficulty concentrating"
+DERS_27@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 27. When I'm upset, I have difficulty controlling my behaviors"
+DERS_28@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 28. When I'm upset, I believe that there is nothing I can do to make myself feel better"
+DERS_29@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 29. When I'm upset, I become irritated with myself for feeling that way"
+DERS_2@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}",Please indicate how often the following 36 statements apply to you. - 2. I pay attention to how I feel
+DERS_30@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 30. When I'm upset, I start to feel very bad about myself"
+DERS_31@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 31. When I'm upset, I believe in wallowing in it is all I can do"
+DERS_32@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 32. When I'm upset, I lose control over all behaviors"
+DERS_33@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 33. When I'm upset, I have difficulty thinking about anything else"
+DERS_34@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 34. When I'm upset, I take time to figure out what I'm really feeling"
+DERS_35@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 35. When I'm upset, it takes me a long time to feel better"
+DERS_36@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","Please indicate how often the following 36 statements apply to you. - 36. When I'm upset, my emotions feel overwhelming"
+DERS_3@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}",Please indicate how often the following 36 statements apply to you. - 3. I experience my emotions as overwhelming and out of control
+DERS_4@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}",Please indicate how often the following 36 statements apply to you. - 4. I have no idea how I am feeling
+DERS_5@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}",Please indicate how often the following 36 statements apply to you. - 5. I have difficulty making sense out of my feelings
+DERS_6@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}",Please indicate how often the following 36 statements apply to you. - 6. I am attentive to my feelings
+DERS_7@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}",Please indicate how often the following 36 statements apply to you. - 7. I know exactly how I am feeling
+DERS_8@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}",Please indicate how often the following 36 statements apply to you. - 8. I care about what I am feeling
+DERS_9@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}",Please indicate how often the following 36 statements apply to you. - 9. I am confused about how I feel
+DERS_Total@survey,Static (baseline survey),Continuous,,DERS Total
+DaysMiss_School@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",How many days of SCHOOL did you miss over the past month due to mental illness?
+DaysMiss_Work@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 3}",How many days of WORK did you miss over the past month due to mental illness?
+DaysSched_ActCent@survey,Static (baseline survey),Continuous,,"In the past 30 days, how many days per week were you scheduled to attend: ACTIVITY CENTER (e.g., 0 = you weren't scheduled any days, 1 = scheduled to attend 1 day/week, etc.).Please type Skip in the box if you wish to skip this question."
+DaysSched_DayHosp@survey,Static (baseline survey),Continuous,,"In the past 30 days, how many days per week were you scheduled to attend: DAY HOSPITAL (e.g., 0 = you weren't scheduled any days, 1 = scheduled to attend 1 day/week, etc.).Please type Skip in the box if you wish to skip this question."
+DaysSched_School@survey,Static (baseline survey),Continuous,,"In the past 30 days, how many days per week were you scheduled to attend: SCHOOL (e.g., 0 = you weren't scheduled any days/you weren't in school, 1 = scheduled to go to school 1 day/week, etc.).Please type Skip in the box if you wish to skip this question."
+DaysSched_Work@survey,Static (baseline survey),Continuous,,"In the past 30 days, how many days per week were you scheduled to attend: WORK (e.g., 0 = you weren't scheduled any days/you weren't working, 1 = scheduled to work 1 day/week, etc.)Please type Skip in the box if you wish to skip this question."
+Duties_Home_C1@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}","DUTIES/RESPONSIBILITIES C. Duties at HOME (e.g., housework, paying bills, grocery shopping, mowing lawn, childcare tasks, car repairs): Please indicate your degree of difficulty functioning in this area over the past month. - Time: amount of time spent performing duties"
+Duties_Home_C2@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}","DUTIES/RESPONSIBILITIES C. Duties at HOME (e.g., housework, paying bills, grocery shopping, mowing lawn, childcare tasks, car repairs): Please indicate your degree of difficulty functioning in this area over the past month. - Conflict: performing these duties without undue friction from others"
+Duties_Home_C3@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}","DUTIES/RESPONSIBILITIES C. Duties at HOME (e.g., housework, paying bills, grocery shopping, mowing lawn, childcare tasks, car repairs): Please indicate your degree of difficulty functioning in this area over the past month. - Enjoyment: enjoying and having an interest in home duties"
+Duties_Home_C4@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}","DUTIES/RESPONSIBILITIES C. Duties at HOME (e.g., housework, paying bills, grocery shopping, mowing lawn, childcare tasks, car repairs): Please indicate your degree of difficulty functioning in this area over the past month. - Performance: quality of work (e.g., doing a good job; getting the job done)"
+Duties_WorkSch_D1@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",DUTIES/RESPONSIBILITIES D. Duties at WORK/SCHOOL/ACTIVITY CENTER: Please indicate your degree of difficulty functioning in this area over the past month. - Time: amount of time spent at work/school/etc.
+Duties_WorkSch_D2@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",DUTIES/RESPONSIBILITIES D. Duties at WORK/SCHOOL/ACTIVITY CENTER: Please indicate your degree of difficulty functioning in this area over the past month. - Conflict: getting along with co-workers and supervisors
+Duties_WorkSch_D3@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",DUTIES/RESPONSIBILITIES D. Duties at WORK/SCHOOL/ACTIVITY CENTER: Please indicate your degree of difficulty functioning in this area over the past month. - Enjoyment: employment/ satisfaction and interest from work
+Duties_WorkSch_D4@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",DUTIES/RESPONSIBILITIES D. Duties at WORK/SCHOOL/ACTIVITY CENTER: Please indicate your degree of difficulty functioning in this area over the past month. - Performance: quality of work
+EducYears_cleaned@survey,Static (baseline survey),Continuous,,"What is your total number of years of education (including elementary school, high school, college, and higher education)? Please type """"Skip"""" in the box below if you wish to skip this question."
+Education@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 5}","What is your highest level of education completed? Please select one. --- {1: ""Elementary/grade school"", 2: ""Some high school"", 3: ""High school diploma or equivalent"", 4: ""College/university"", 5: ""Graduate/professional school""}"
+Employed@survey,Static (baseline survey),Binary,,Are you currently employed?
+Ethnicity@survey,Static (baseline survey),Binary,,What ethnicity/ethnicities describe you best? Please select one.
+FinanceSituation_1@survey,Static (baseline survey),Binary (one-hot encoded),,"What was your FINANCIAL SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Received no pay (fully supported by someone else; e.g., parents, spouse, etc.)"
+FinanceSituation_2@survey,Static (baseline survey),Binary (one-hot encoded),,What was your FINANCIAL SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Received wages for work performed
+FinanceSituation_3@survey,Static (baseline survey),Binary (one-hot encoded),,What was your FINANCIAL SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Received SSI (Supplementary Security Income) or SSD )Social Security Disability)
+FinanceSituation_4@survey,Static (baseline survey),Binary (one-hot encoded),,What was your FINANCIAL SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Retirement benefits
+FinanceSituation_5@survey,Static (baseline survey),Binary (one-hot encoded),,What was your FINANCIAL SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Other (please specify):
+Gender^Female@survey,Static (baseline survey),Binary (one-hot encoded),,Which gender do you most identify with? (Value = Female)
+Gender^Gender fluid@survey,Static (baseline survey),Binary (one-hot encoded),,Which gender do you most identify with? (Value = Gender fluid)
+Gender^Male@survey,Static (baseline survey),Binary (one-hot encoded),,Which gender do you most identify with? (Value = Male)
+Gender^Non-binary@survey,Static (baseline survey),Binary (one-hot encoded),,Which gender do you most identify with? (Value = Non-binary)
+Gender^Transgender woman@survey,Static (baseline survey),Binary (one-hot encoded),,Which gender do you most identify with? (Value = Transgender woman)
+LFQ_DutHome_Ave@survey,Static (baseline survey),Continuous,,Average score of duties at home from the Life Functioning Questionnaire (LFQ)
+LFQ_DutHome_Impair@survey,Static (baseline survey),Binary,,Impairment in duties at home from the Life Functioning Questionnaire (LFQ)
+LFQ_DutWorkSch_Ave@survey,Static (baseline survey),Continuous,,Average score of duties at work or school from the Life Functioning Questionnaire (LFQ)
+LFQ_DutWorkSch_Impair@survey,Static (baseline survey),Binary,,Impairment in duties at work or school from the Life Functioning Questionnaire (LFQ)
+LFQ_LeisFam_Ave@survey,Static (baseline survey),Continuous,,Average score of leisure time with family from the Life Functioning Questionnaire (LFQ)
+LFQ_LeisFam_Impair@survey,Static (baseline survey),Binary,,Impairment in leisure time with family from the Life Functioning Questionnaire (LFQ)
+LFQ_LeisFriend_Ave@survey,Static (baseline survey),Continuous,,Average score of leisure time with friends from the Life Functioning Questionnaire (LFQ)
+LFQ_LeisFriend_Impair@survey,Static (baseline survey),Binary,,Impairment in leisure time with friends from the Life Functioning Questionnaire (LFQ)
+Leisure_Family_B1@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",LEISURE TIME B. Leisure activities with FAMILY: Please indicate your degree of difficulty functioning in this area over the past month. - Time: amount of time spent with family
+Leisure_Family_B2@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",LEISURE TIME B. Leisure activities with FAMILY: Please indicate your degree of difficulty functioning in this area over the past month. - Conflict: getting along with family
+Leisure_Family_B3@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",LEISURE TIME B. Leisure activities with FAMILY: Please indicate your degree of difficulty functioning in this area over the past month. - Enjoyment: enjoying and having an interest in family activities
+Leisure_Friends_A1@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",LEISURE TIME A. Leisure activities with FRIENDS: Please indicate your degree of difficulty functioning in this area over the past month. - Time: amount of time spent with friends
+Leisure_Friends_A2@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",LEISURE TIME A. Leisure activities with FRIENDS: Please indicate your degree of difficulty functioning in this area over the past month. - Conflict: getting along with friends
+Leisure_Friends_A3@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}",LEISURE TIME A. Leisure activities with FRIENDS: Please indicate your degree of difficulty functioning in this area over the past month. - Enjoyment: enjoying time spent together
+LivingSituation_10@survey,Static (baseline survey),Binary (one-hot encoded),,"What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Boarding house (includes meals, no program or supervision)"
+LivingSituation_11@survey,Static (baseline survey),Binary (one-hot encoded),,"What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Rooming or boarding house or hotel (includes single room occupancy, no meals are provided, cooking facilities may be available)"
+LivingSituation_12@survey,Static (baseline survey),Binary (one-hot encoded),,What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Private house or apartment
+LivingSituation_16@survey,Static (baseline survey),Binary (one-hot encoded),,What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Other (please specify):
+LivingSituation_1@survey,Static (baseline survey),Binary (one-hot encoded),,What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Hospital
+LivingSituation_2@survey,Static (baseline survey),Binary (one-hot encoded),,What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Skilled nursing facility - 24-hour nursing service
+LivingSituation_3@survey,Static (baseline survey),Binary (one-hot encoded),,What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Intermediate care facility - less than 24-hour nursing care facility
+LivingSituation_6@survey,Static (baseline survey),Binary (one-hot encoded),,What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Family foster care
+LivingSituation_7@survey,Static (baseline survey),Binary (one-hot encoded),,"What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Cooperative apartment, supervised (staff on premises)"
+LivingSituation_8@survey,Static (baseline survey),Binary (one-hot encoded),,"What was your LIVING SITUATION over the last six months? (Please mark ALL that apply) - Selected Choice Cooperative apartment, unsupervised (staff not on premises)"
+MedCond@survey,Static (baseline survey),Binary,,"Have you ever experienced a major medical event, chronic disease, or significant injury that resulted in a loss of functioning (e.g., cancer, diabetes, stroke, hypertension)?"
+MedCond_AutoIm@survey,Static (baseline survey),Binary,,"Answering “autoimmune disease” to the question MedCond (i.e., have you ever experienced a major medical event, chronic disease, or significant injury that resulted in a loss of functioning?)"
+MedCond_Cancer@survey,Static (baseline survey),Binary,,"Answering “cancer” to the question MedCond (i.e., have you ever experienced a major medical event, chronic disease, or significant injury that resulted in a loss of functioning?)"
+MedCond_Cardio@survey,Static (baseline survey),Binary,,"Answering “cardiovascular condition” to the question MedCond (i.e., have you ever experienced a major medical event, chronic disease, or significant injury that resulted in a loss of functioning?)"
+MedCond_Chronic@survey,Static (baseline survey),Binary,,"Answering “chronic illness” to the question MedCond (i.e., have you ever experienced a major medical event, chronic disease, or significant injury that resulted in a loss of functioning?)"
+MedCond_Diabetes@survey,Static (baseline survey),Binary,,"Answering “diabetes” to the question MedCond (i.e., have you ever experienced a major medical event, chronic disease, or significant injury that resulted in a loss of functioning?)"
+MedCond_Musculo@survey,Static (baseline survey),Binary,,"Answering “musculoskeletal condition” to the question MedCond (i.e., have you ever experienced a major medical event, chronic disease, or significant injury that resulted in a loss of functioning?)"
+MedCond_NS@survey,Static (baseline survey),Binary,,"Answering “nervous system disorder” to the question MedCond (i.e., have you ever experienced a major medical event, chronic disease, or significant injury that resulted in a loss of functioning?)"
+MedCond_Other@survey,Static (baseline survey),Binary,,"Answering “other” to the question MedCond (i.e., have you ever experienced a major medical event, chronic disease, or significant injury that resulted in a loss of functioning?)"
+MonthlyInc_Category^1@survey,Static (baseline survey),Binary (one-hot encoded),,Monthly income category 1 = Low-income
+MonthlyInc_Category^2@survey,Static (baseline survey),Binary (one-hot encoded),,Monthly income category 2 = Moderate-income
+MonthlyInc_Category^3@survey,Static (baseline survey),Binary (one-hot encoded),,Monthly income category 3 = Middle-income
+MonthlyInc_Category^4@survey,Static (baseline survey),Binary (one-hot encoded),,Monthly income category 4 = High-income
+MonthlyInc_cleaned@survey,Static (baseline survey),Continuous,,What is your individual monthly income? Please type Skip in the box below if you wish to skip this question
+Occup_code^10@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Healthcare Practitioners and Technical Occupations
+Occup_code^11@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Healthcare Support Occupations
+Occup_code^13@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Food Preparation and Serving Related Occupations
+Occup_code^15@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Personal Care and Service Occupations
+Occup_code^16@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Sales and Related Occupations
+Occup_code^17@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Office and Administrative Support Occupations
+Occup_code^1@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Management Occupations
+Occup_code^20@survey,Static (baseline survey),Binary (one-hot encoded),,"Occupation = Installation, Maintenance, and Repair Occupations"
+Occup_code^2@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Business and Financial Operations Occupations
+Occup_code^3@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Computer and Mathematical Occupations
+Occup_code^5@survey,Static (baseline survey),Binary (one-hot encoded),,"Occupation = Life, Physical, and Social Science Occupations"
+Occup_code^6@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Community and Social Service Occupations
+Occup_code^8@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Educational Instruction and Library Occupations
+Occup_code^999@survey,Static (baseline survey),Binary (one-hot encoded),,Occupation = Other Occupations
+Occup_code^9@survey,Static (baseline survey),Binary (one-hot encoded),,"Occupation = Arts, Design, Entertainment, Sports, and Media Occupations"
+PSS4_1@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}","The questions in this scale ask you about your feelings and thoughts during THE LAST MONTH. In each case, please select the option that represents HOW OFTEN you felt or thought a certain way. - In the last month, how often have you felt that you were unable to control the important things in your life?"
+PSS4_2@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}","The questions in this scale ask you about your feelings and thoughts during THE LAST MONTH. In each case, please select the option that represents HOW OFTEN you felt or thought a certain way. - In the last month, how often have you felt confident about your ability to handle your personal problems?"
+PSS4_3@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}","The questions in this scale ask you about your feelings and thoughts during THE LAST MONTH. In each case, please select the option that represents HOW OFTEN you felt or thought a certain way. - In the last month, how often have you felt that things were going your way?"
+PSS4_4@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 4}","The questions in this scale ask you about your feelings and thoughts during THE LAST MONTH. In each case, please select the option that represents HOW OFTEN you felt or thought a certain way. - In the last month, how often have you felt difficulties were piling up so high that you could not overcome them?"
+PSS4_Total@survey,Static (baseline survey),Continuous,,PSS-4 Total
+PrimLanguage^English@survey,Static (baseline survey),Binary (one-hot encoded),,What is your primary spoken language? Please select one. - Selected Choice (Value = English)
+PrimLanguage^Other@survey,Static (baseline survey),Binary (one-hot encoded),,What is your primary spoken language? Please select one. - Selected Choice (Value = Other)
+PrimLanguage^Spanish@survey,Static (baseline survey),Binary (one-hot encoded),,What is your primary spoken language? Please select one. - Selected Choice (Value = Spanish)
+PsyDx_ADHD@survey,Static (baseline survey),Binary,,"Answering “ADHD” to the question PsychDx (i.e., are you currently or have you ever received a psychiatric diagnosis?)"
+PsyDx_Anx@survey,Static (baseline survey),Binary,,"Answering “Anxiety Disorder” to the question PsychDx (i.e., are you currently or have you ever received a psychiatric diagnosis?)"
+PsyDx_Bipol@survey,Static (baseline survey),Binary,,"Answering “Bipolar Disorder” to the question PsychDx (i.e., are you currently or have you ever received a psychiatric diagnosis?)"
+PsyDx_Dep@survey,Static (baseline survey),Binary,,"Answering “Depressive Disorder” to the question PsychDx (i.e., are you currently or have you ever received a psychiatric diagnosis?)"
+PsyDx_OCD@survey,Static (baseline survey),Binary,,"Answering “Obsessive-Compulsive Disorder” to the question PsychDx (i.e., are you currently or have you ever received a psychiatric diagnosis?)"
+PsyDx_PD@survey,Static (baseline survey),Binary,,"Answering “Personality Disorder” to the question PsychDx (i.e., are you currently or have you ever received a psychiatric diagnosis?)"
+PsyDx_Somat@survey,Static (baseline survey),Binary,,"Answering “Somatic Symptom Disorder” to the question PsychDx (i.e., are you currently or have you ever received a psychiatric diagnosis?)"
+PsyDx_Sub@survey,Static (baseline survey),Binary,,"Answering “Substance-Related Disorder” to the question PsychDx (i.e., are you currently or have you ever received a psychiatric diagnosis?)"
+PsyDx_Trauma@survey,Static (baseline survey),Binary,,"Answering “Trauma-Related Disorder” to the question PsychDx (i.e., are you currently or have you ever received a psychiatric diagnosis?)"
+PsyMed_AntiAnx@survey,Static (baseline survey),Binary,,"Answering “Anti-Anxiety Medication” to the question PsychMed (i.e., are you currently, or have you ever taken medication for psychiatric treatment?)"
+PsyMed_AntiDep@survey,Static (baseline survey),Binary,,"Answering “Antidepressant” to the question PsychMed (i.e., are you currently, or have you ever taken medication for psychiatric treatment?)"
+PsyMed_AntiPsyc@survey,Static (baseline survey),Binary,,"Answering “Antipsychotic” to the question PsychMed (i.e., are you currently, or have you ever taken medication for psychiatric treatment?)"
+PsyMed_Mood@survey,Static (baseline survey),Binary,,"Answering “Mood Stabilizer” to the question PsychMed (i.e., are you currently, or have you ever taken medication for psychiatric treatment?)"
+PsyMed_Other@survey,Static (baseline survey),Binary,,"Answering “Others” to the question PsychMed (i.e., are you currently, or have you ever taken medication for psychiatric treatment?)"
+PsyMed_Stim@survey,Static (baseline survey),Binary,,"Answering “Stimulant Medication” to the question PsychMed (i.e., are you currently, or have you ever taken medication for psychiatric treatment?)"
+PsyTx_Inpat@survey,Static (baseline survey),Binary,,"Answering “Inpatient Treatment” to the question PsychTx (i.e., are you currently, or have you received any form of mental health treatment?)"
+PsyTx_MedMgmt@survey,Static (baseline survey),Binary,,"Answering “Medication Management” to the question PsychTx (i.e., are you currently, or have you received any form of mental health treatment?)"
+PsyTx_Other@survey,Static (baseline survey),Binary,,"Answering “Others” to the question PsychTx (i.e., are you currently, or have you received any form of mental health treatment?)"
+PsyTx_OutGrp@survey,Static (baseline survey),Binary,,"Answering “Outpatient Group Therapy” to the question PsychTx (i.e., are you currently, or have you received any form of mental health treatment?)"
+PsyTx_OutInd@survey,Static (baseline survey),Binary,,"Answering “Outpatient Individual Therapy” to the question PsychTx (i.e., are you currently, or have you received any form of mental health treatment?)"
+PsychDx@survey,Static (baseline survey),Binary,,"Are you currently, or have you ever received a psychiatric diagnosis (e.g., depression, social anxiety, bipolar disorder)?"
+PsychMed@survey,Static (baseline survey),Binary,,"Are you currently, or have you ever taken medication for psychiatric treatment?"
+PsychTx@survey,Static (baseline survey),Binary,,"Are you currently, or have you ever received any form of mental health treatment?"
+Race_1@survey,Static (baseline survey),Binary (one-hot encoded),,What race(s) describes you best? Please select as many as apply. - Selected Choice American Indian or Alaska Native
+Race_2@survey,Static (baseline survey),Binary (one-hot encoded),,What race(s) describes you best? Please select as many as apply. - Selected Choice Asian
+Race_3@survey,Static (baseline survey),Binary (one-hot encoded),,What race(s) describes you best? Please select as many as apply. - Selected Choice Black or African American
+Race_4@survey,Static (baseline survey),Binary (one-hot encoded),,What race(s) describes you best? Please select as many as apply. - Selected Choice Native Hawaiian or Other Pacific Islander
+Race_5@survey,Static (baseline survey),Binary (one-hot encoded),,What race(s) describes you best? Please select as many as apply. - Selected Choice White
+Race_6@survey,Static (baseline survey),Binary (one-hot encoded),,What race(s) describes you best? Please select as many as apply. - Selected Choice Other
+Race_999@survey,Static (baseline survey),Binary (one-hot encoded),,What race(s) describes you best? Please select as many as apply. - Selected Choice Choose to skip
+RelStat^Divorced/Separated@survey,Static (baseline survey),Binary (one-hot encoded),,What is your current relationship status? (Value = Divorced/Separated)
+RelStat^Married/engaged/common-law@survey,Static (baseline survey),Binary (one-hot encoded),,What is your current relationship status? (Value = Married/engaged/common-law)
+RelStat^Other@survey,Static (baseline survey),Binary (one-hot encoded),,What is your current relationship status? (Value = Other)
+RelStat^Single@survey,Static (baseline survey),Binary (one-hot encoded),,What is your current relationship status? (Value = Single)
+Relig_code^10@survey,Static (baseline survey),Binary (one-hot encoded),,Religion as Don’t know
+Relig_code^1@survey,Static (baseline survey),Binary (one-hot encoded),,Religion as None
+Relig_code^2@survey,Static (baseline survey),Binary (one-hot encoded),,Religion as Catholic
+Relig_code^3@survey,Static (baseline survey),Binary (one-hot encoded),,Religion as Baptist/Southern Baptist
+Relig_code^4@survey,Static (baseline survey),Binary (one-hot encoded),,"Religion as Methodist, Lutheran, Presbyterian, Episcopal"
+Relig_code^5@survey,Static (baseline survey),Binary (one-hot encoded),,Religion as Fundamentalist5 Protestant
+Relig_code^6@survey,Static (baseline survey),Binary (one-hot encoded),,Religion as Other Protestant denomination
+Relig_code^8@survey,Static (baseline survey),Binary (one-hot encoded),,Religion as Other religion
+Relig_code^999@survey,Static (baseline survey),Binary (one-hot encoded),,Religion not answered
+Relig_code^9@survey,Static (baseline survey),Binary (one-hot encoded),,Religion as Refused
+SUD@survey,Static (baseline survey),Binary,,Please indicate if ANY of the following are true: Do you currently consume 4 or more drinks on a daily or almost daily basis? Do you currently use prescription drugs for non-medical reasons on a daily or almost daily basis? Do you currently use any illegal drugs on a daily or almost daily basis?
+Sex@survey,Static (baseline survey),Binary,,What is your biological sex?
+SexOrient^Asexual@survey,Static (baseline survey),Binary (one-hot encoded),,What is your sexual orientation? - Selected Choice (Value = Asexual)
+SexOrient^Bisexual@survey,Static (baseline survey),Binary (one-hot encoded),,What is your sexual orientation? - Selected Choice (Value = Bisexual)
+SexOrient^Heterosexual@survey,Static (baseline survey),Binary (one-hot encoded),,What is your sexual orientation? - Selected Choice (Value = Heterosexual)
+SexOrient^Homosexual@survey,Static (baseline survey),Binary (one-hot encoded),,What is your sexual orientation? - Selected Choice (Value = Homosexual)
+SexOrient^Other@survey,Static (baseline survey),Binary (one-hot encoded),,What is your sexual orientation? - Selected Choice (Value = Other)
+SexOrient^Pansexual@survey,Static (baseline survey),Binary (one-hot encoded),,What is your sexual orientation? - Selected Choice (Value = Pansexual)
+Smoker@survey,Static (baseline survey),Binary,,Do you smoke?
+TAPS.1_1@survey,Static (baseline survey),Binary,,"TAPS-1 - In the PAST 12 MONTHS, how often have you used any tobacco product (for example, cigarettes, e- cigarettes, cigars, pipes, or smokeless tobacco)?"
+TAPS.1_2@survey,Static (baseline survey),Binary,,"TAPS-1 - In the PAST 12 MONTHS, how often have you had 5 or more drinks* containing alcohol in one day if you were assigned MALE at birth, or 4 or more drinks* containing alcohol in one day if you were assigned FEMALE at birth? *One standard drink is about 1 small glass of wine (5 oz), 1 beer (12 oz), or 1 single shot of liquor."
+TAPS.1_3@survey,Static (baseline survey),Binary,,"TAPS-1 - In the PAST 12 MONTHS, how often have you used any drugs including marijuana, cocaine or crack, heroin, methamphetamine (crystal meth), hallucinogens, ecstasy/MDMA?"
+TAPS.1_4@survey,Static (baseline survey),Binary,,"TAPS-1 - In the PAST 12 MONTHS, how often have you used any prescription medications just for the feeling, more than prescribed or that were not prescribed for you? Prescription medications that may be used this way include: Opiate pain relievers (for example, OxyContin, Vicodin, Percocet, Methadone) Medications for anxiety or sleeping (for example, Xanax, Ativan, Klonopin) Medications for ADHD (for example, Adderall or Ritalin)"
+TAPS.1_Total@survey,Static (baseline survey),Continuous,,"Total score from Tobacco, Alcohol, Prescription Medications, and Other Substance Tool (TAPS), Part 1"
+TAPS.2_AlcoholRisk@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 2}","Alcohol risk score from Tobacco, Alcohol, Prescription Medications, and Other Substance Tool (TAPS), Part 2"
+TAPS.2_AnxMedsRisk@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 2}","Anxiety medication risk score from Tobacco, Alcohol, Prescription Medications, and Other Substance Tool (TAPS), Part 2"
+TAPS.2_CannabisRisk@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 2}","Cannabis risk score from Tobacco, Alcohol, Prescription Medications, and Other Substance Tool (TAPS), Part 2"
+TAPS.2_OtherDrugRisk@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 1}","Other drug risk score from Tobacco, Alcohol, Prescription Medications, and Other Substance Tool (TAPS), Part 2"
+TAPS.2_StimulantRisk@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 2}","Stimulant risk score from Tobacco, Alcohol, Prescription Medications, and Other Substance Tool (TAPS), Part 2"
+TAPS.2_TobaccoRisk@survey,Static (baseline survey),Ordinal,"{'Min': 0, 'Max': 2}","Tobacco risk score from Tobacco, Alcohol, Prescription Medications, and Other Substance Tool (TAPS), Part 2"
+WorkDiff_Reasons_10@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Disability check was greater than I could have made otherwise"
+WorkDiff_Reasons_11@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Didn't have a job for a long time prior to this most recent episode"
+WorkDiff_Reasons_12@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Physical symptoms (e.g., difficulty concentrating, blurred vision, fatigue/sedation) interfered with my functioning"
+WorkDiff_Reasons_13@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Didn't need to work (retired, supported by someone else, etc.), but I could if need be"
+WorkDiff_Reasons_14@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Medication side effects interfered with functioning"
+WorkDiff_Reasons_15@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Other (please explain):"
+WorkDiff_Reasons_1@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Too depressed most of the time"
+WorkDiff_Reasons_2@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Too manic most of the time"
+WorkDiff_Reasons_3@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Couldn't get my mood stable long enough to work - too up and down"
+WorkDiff_Reasons_4@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Afraid to work at usual level because afraid of precipitating another episode"
+WorkDiff_Reasons_5@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Wanted to work but the kind of job that I could get due to my broken resume (i.e., gaps in work history) was too demeaning for my education level"
+WorkDiff_Reasons_6@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Mood OK and wanted to work but couldn't get a job due to my broken resume (i.e., gaps in work history)"
+WorkDiff_Reasons_7@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Couldn't get along with others"
+WorkDiff_Reasons_8@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Wanted my old job but couldn't get it"
+WorkDiff_Reasons_999@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Choose to skip"
+WorkDiff_Reasons_9@survey,Static (baseline survey),Binary (one-hot encoded),,"Reasons causing difficulties in Role Functioning Did any of the factors below cause you difficulties at work this month, or cause you to work less than full-time, or not at all? (Please mark ALL that apply for this past month). - Selected Choice Could get my old job but felt too embarrassed to go back"
+WorkFT_Duration@survey,Static (baseline survey),Ordinal,"{'Min': 1, 'Max': 4}","How long were you working full-time the last time you worked full-time? (Please select only ONE of the following options) --- {1 ""Less than 1 month"", 2: ""Less than 6 months"", 3: ""Less than 1 year"", 4: ""1 year or more""}"
+WorkFT_ReasonStop_1@survey,Static (baseline survey),Binary (one-hot encoded),,"Why did you stop working full-time? (Please select ALL that apply; If there is more than one reason, please use the text boxes to rank them in order of importance: 1 = most important, 2 = next important, etc) - Selected Choice Mental illness"
+WorkFT_ReasonStop_2@survey,Static (baseline survey),Binary (one-hot encoded),,"Why did you stop working full-time? (Please select ALL that apply; If there is more than one reason, please use the text boxes to rank them in order of importance: 1 = most important, 2 = next important, etc) - Selected Choice Physical illness"
+WorkFT_ReasonStop_3@survey,Static (baseline survey),Binary (one-hot encoded),,"Why did you stop working full-time? (Please select ALL that apply; If there is more than one reason, please use the text boxes to rank them in order of importance: 1 = most important, 2 = next important, etc) - Selected Choice Children"
+WorkFT_ReasonStop_4@survey,Static (baseline survey),Binary (one-hot encoded),,"Why did you stop working full-time? (Please select ALL that apply; If there is more than one reason, please use the text boxes to rank them in order of importance: 1 = most important, 2 = next important, etc) - Selected Choice Couldn't find a job after leaving/being laid off from previous job"
+WorkFT_ReasonStop_5@survey,Static (baseline survey),Binary (one-hot encoded),,"Why did you stop working full-time? (Please select ALL that apply; If there is more than one reason, please use the text boxes to rank them in order of importance: 1 = most important, 2 = next important, etc) - Selected Choice Retired"
+WorkFT_ReasonStop_6@survey,Static (baseline survey),Binary (one-hot encoded),,"Why did you stop working full-time? (Please select ALL that apply; If there is more than one reason, please use the text boxes to rank them in order of importance: 1 = most important, 2 = next important, etc) - Selected Choice Other (please explain):"
+WorkFT_When^2-5 years ago@survey,Static (baseline survey),Binary (one-hot encoded),,When did you last work full-time? (Please select only ONE of the following options) (Value = 2-5 years ago)
+WorkFT_When^5-10 years ago@survey,Static (baseline survey),Binary (one-hot encoded),,When did you last work full-time? (Please select only ONE of the following options) (Value = 5-10 years ago)
+WorkFT_When^I have never worked full-time@survey,Static (baseline survey),Binary (one-hot encoded),,When did you last work full-time? (Please select only ONE of the following options) (Value = I have never worked full-time)
+WorkFT_When^I work full-time now@survey,Static (baseline survey),Binary (one-hot encoded),,When did you last work full-time? (Please select only ONE of the following options) (Value = I work full-time now)
+WorkFT_When^Over 10 years ago@survey,Static (baseline survey),Binary (one-hot encoded),,When did you last work full-time? (Please select only ONE of the following options) (Value = Over 10 years ago)
+WorkFT_When^Within the last 2 years@survey,Static (baseline survey),Binary (one-hot encoded),,When did you last work full-time? (Please select only ONE of the following options) (Value = Within the last 2 years)
+WorkSituation_10@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Volunteer: PART-TIME
+WorkSituation_11@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Student: FULL-TIME
+WorkSituation_12@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Student: PART-TIME
+WorkSituation_13@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Housewife/husband: as FULL-TIME job
+WorkSituation_14@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Housewife/husband: as PART-TIME job
+WorkSituation_15@survey,Static (baseline survey),Binary (one-hot encoded),,"Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Not working at a job, at school, or at home"
+WorkSituation_16@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Other (please explain):
+WorkSituation_1@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Competitive Job (paid job obtained without assistance of rehab program): FULL-TIME at SAME OR HIGHER job level than held prior to most recent episode
+WorkSituation_2@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Competitive Job (paid job obtained without assistance of rehab program): PART-TIME at SAME OR HIGHER job level than held prior to most recent episode
+WorkSituation_3@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Competitive Job (paid job obtained without assistance of rehab program): FULL-TIME at LOWER job level than held prior to most recent episode
+WorkSituation_4@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Competitive Job (paid job obtained without assistance of rehab program): PART-TIME at LOWER job level than held prior to most recent episode
+WorkSituation_6@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Transitional Job (paid job obtained through vocational rehabilitation program): PART-TIME
+WorkSituation_7@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Work Training
+WorkSituation_999@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Choose to skip
+WorkSituation_9@survey,Static (baseline survey),Binary (one-hot encoded),,Please mark the answer(s) which best describe your situation. Work situation this month: (Please mark only the boxes that apply to the last 30 days) - Selected Choice Volunteer: FULL-TIME
