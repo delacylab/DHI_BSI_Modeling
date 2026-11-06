@@ -5,6 +5,7 @@
 
 # Classical machine learning versus transformers for predicting daily psychological distress from passive smartphone sensing and self-report: a prospective cohort study
 
+[![medRxiv_badge](https://img.shields.io/badge/medRxiv-2024.09.19.24313909-blue)](https://www.medrxiv.org/content/10.64898/2026.11.04.26367218v1)
 [![license_badge](https://img.shields.io/badge/License-Apache_2.0-8A2BE2)](https://www.apache.org/licenses/LICENSE-2.0)
 
 <div align="center">
